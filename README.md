@@ -1,1 +1,1 @@
-(wavetrip.org)
+[wavetrip.org](http://wavetrip.org)
