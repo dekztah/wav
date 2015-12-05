@@ -363,7 +363,7 @@ module.exports = function (grunt) {
                         '*.html',
                         'views/{,*/}*.html',
                         'images/{,*/}*.{webp}',
-                        'styles/fonts/{,*/}*.*'
+                        'fonts/{,*/}*.*'
                     ]
                 }, {
                     expand: true,
@@ -411,12 +411,12 @@ module.exports = function (grunt) {
                 connectCommits: false,
                 message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
             },
-            bitbucket: {
+            pages: {
                 options: {
-                    remote: 'git@bitbucket.org:dekztah/wav.git',
-                    branch: 'build'
+                    remote: 'git@github.com:dekztah/wav.git',
+                    branch: 'gh-pages'
                 }
-            }
+            },
         }
     });
 
